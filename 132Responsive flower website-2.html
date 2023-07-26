@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<meta name="viewport" content="width=device-width, initial - scale=1.0"> 
+
+<title>Responsive flower website </title>
+
+<link rel="stylesheet" href="https:://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+
+
+
+
+
+
+
+
+@media (max-width: 450px){
+
+*{
+
+margin: 0;
+
+padding: 0;
+
+outline: none;
+
+border: none;
+
+text-decoration: none;
+
+text-transform: capitalize;
+
+transition: .2s linear;
+
+color: orange;
+
+}
+
+
+
+html{
+
+font-size: 62.5%;
+
+scroll-behavior: smooth;
+
+scroll-padding-top: 6rem;
+
+overflow-x: hidden;
+
+}
+
+
+
+section{
+
+padding: 2rem 9%;
+
+}
+
+
+
+
+
+.heading{
+
+text-align: center;
+
+align-items: center;
+
+font-size: 4rem;
+
+color: #333;
+
+padding: 1rem;
+
+margin: 2rem 0;
+
+background: #FFAEE3;
+
+}
+
+
+
+.heading span{
+
+color: #e84393;
+
+}
+
+
+
+header{
+
+position: fixed;
+
+top:0;
+
+left: 0;
+
+right: 0;
+
+background: pink;
+
+padding: 2rem 9%;
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+z-index: 1000;
+
+box-shadow: 0 .5rem 1rem orange;
+
+}
+
+header:hover{
+
+background:white;
+
+}
+
+
+
+header .logo{
+
+font-size: 3rem;
+
+color: orange;
+
+font-weight: bolder;
+
+}
+
+
+
+
+
+header .logo span{
+
+color: orange;
+
+}
+
+
+
+header .navbar a{
+
+font-size: 2rem;
+
+padding: 0 1.5rem;
+
+color: orange;
+
+}
+
+
+
+header .navbar a:hover{
+
+color: pink;
+
+}
+
+
+
+header .icons a{
+
+font-size: 2.5rem;
+
+color: #333;
+
+margin-left:1.5rem;
+
+}
+
+
+
+header .icons a:hover{
+
+color: pink;
+
+}
+
+
+
+header .icons a img{
+
+width: 2.5rem;
+
+height: 2.5rem;
+
+font-size: 2.5rem;
+
+background-color: orange;
+
+margin-left:1.5rem;
+
+}
+
+
+
+header .icons a img:hover{
+
+background-color: pink;
+
+}
+
+
+
+header #toggler{
+
+display: none;
+
+}
+
+header #toggler p {
+
+    color: #60F1FF;
+
+}
+
+
+
+header .fa-bars{
+
+font-size: 3rem;
+
+color: #333;
+
+text-align: center;
+
+padding: 7px 1.5rem;
+
+cursor: pointer;
+
+display: none;
+
+}
+
+
+
+
+
+.home{
+
+display: flex;
+
+align-items: center;
+
+height: 25vh;
+
+background: url(image/20190810_033506.jpg) no-repeat;
+
+background-size: cover;
+
+background-color: #FFDEF8;
+
+width: 100%; 
+
+}
+
+
+
+
+
+.home h1{
+
+text-align: center;
+
+vertical-align: middle;
+
+font-size: 15px ;
+
+font-weight: 150;
+
+border-radius: 3px;
+
+border:2px solid orange;
+
+box-shadow: .4rem 1rem 1rem 1rem #FFA6EA;
+
+}
+
+
+
+.about{
+
+display: flex;
+
+align-items: center;
+
+min-height: 60vh;
+
+width: 100%;
+
+background-color: pink;
+
+}
+
+.about .class{
+
+padding-left: -30px;
+
+background-color: #FFDEF8;
+
+height: 60vh;
+
+width: 520px;
+
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+
+   border-radius: 50px;
+
+   border-bottom: 34px solid #FFA6EA;
+
+}
+
+.about .class h1{
+
+    padding: top;
+
+    text-align: left;
+
+    font-size: 30px;
+
+    border-top: 34px solid #FFA6EA;
+
+}
+
+.about .class h3{
+
+    padding-top: 20px;
+
+    border-radius: 50px;
+
+    border-top: 5px solid #FFA6EA;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    width:80%;
+
+    font-weight: 100;
+
+}
+
+.about h4{
+
+    padding-left: 10px;
+
+    font-size: 15px;
+
+    font-weight: 230;
+
+    
+
+}  
+
+.us{
+
+display: flex;
+
+align-items: center;
+
+min-height: 60vh;
+
+width: 100%;
+
+background-color: lightpink; 
+
+}
+
+.us .usstart{
+
+    height: 41vh;
+
+    width: 30px;
+
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 105% 50%, 0% 0%);
+
+background-color: orange;
+
+}
+
+.us h3{
+
+text-transform: uppercase;
+
+line-height: 24px;
+
+padding: 5px 4px;
+
+margin:0 0 10px 0;
+
+font-size: 17px;
+
+}
+
+.us ul li {
+
+    list-style-type: circle;
+
+    font-size: 13px;
+
+}
+
+
+
+.tips{
+
+ display: flex;   
+
+ align-items: center;
+
+ background-color: pink;
+
+ min-height: 60vh;
+
+ width: 100%;
+
+}
+
+.tips:hover{
+
+    background-color: lightpink;
+
+}
+
+.tips ul li{
+
+    list-style: none;
+
+    padding:top;
+
+    font-size: 18px;
+
+    font-weight: 380;
+
+    padding-bottom: 6px;
+
+    padding-top: 10px;
+
+}
+
+.tips ul p{
+
+    padding-top: 6px;
+
+    font-size: 15px;
+
+    font-weight: 200;
+
+}
+
+.tips-01{
+
+    display:flex;
+
+    align-self: center;
+
+    background-color: lightpink;
+
+    min-height: 60vh;
+
+    width: 100%;
+
+}
+
+.tips-01:hover{
+
+    background-color: pink;
+
+}
+
+.tips-01 ul li{
+
+    list-style: none;
+
+    padding:top;
+
+    font-size: 18px;
+
+    font-weight: 380;
+
+    padding-bottom: 6px;
+
+    padding-top: 10px;
+
+}
+
+.tips-01 ul p{
+
+    padding-top: 6px;
+
+    font-size: 15px;
+
+    font-weight: 200;
+
+}
+
+.tips-02{
+
+    display: flex;
+
+    align-self: center;
+
+    background-color: pink;
+
+    min-height: 60vh;
+
+    width: 100%;
+
+}
+
+.tips-02:hover{
+
+    background-color: lightpink;
+
+}
+
+.tips-02 ul li{
+
+    list-style: none;
+
+    padding:top;
+
+    font-size: 18px;
+
+    font-weight: 380;
+
+    padding-bottom: 6px;
+
+    padding-top: 10px;
+
+}
+
+.tips-02 ul p{
+
+    padding-top: 6px;
+
+    font-size: 15px;
+
+    font-weight: 200;
+
+}
+
+.tips-03{
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: lightpink;
+
+    min-height: 70vh;
+
+    width: 100%;
+
+}
+
+.tips-03:hover{
+
+    background-color: pink;
+
+}
+
+.tips-03 ul li{
+
+    list-style: none;
+
+    padding:top;
+
+    font-size: 18px;
+
+    font-weight: 380;
+
+    padding-bottom: 6px;
+
+    padding-top: 10px;
+
+}
+
+.tips-03 ul p{
+
+    padding-top: 6px;
+
+    font-size: 15px;
+
+    font-weight: 200;
+
+}
+
+.iconco{
+
+    background-color: orange;
+
+    min-height: 30vh;
+
+    width: 100%;
+
+}
+
+.iconco h1{
+
+    color: #FFAEE3;
+
+    padding: top;
+
+    font-weight: 600;
+
+    max-width: 50rem;
+
+    padding-bottom: 30px;
+
+}
+
+.iconco p{
+
+    padding-right: 80px;
+
+    color: #FFAEE3;
+
+    font-weight: 500;
+
+    padding-top: 20px;
+
+    padding-bottom: 10px;
+
+    font-size: 12px;
+
+}
+
+.iconco a{
+
+    align-content: center;
+
+    padding-right: 85px;
+
+    padding-bottom: 15px;
+
+    color: green;
+
+    font-weight: 500;
+
+    justify-content: space-between;
+
+    text-decoration: underline;
+
+}
+
+.contact{
+
+    display: flex;
+
+    min-height: 60vh;
+
+    width: 100%;
+
+    background-color: pink;
+
+}
+
+.contact h1{
+
+    font-size: 20px;
+
+    padding: 10px 22px 15px 2px;
+
+    text-align: center;
+
+    font-weight: 100;
+
+}
+
+.contact p{
+
+    font-size: 12px;
+
+    font-weight: 180;
+
+    padding-right: 40px;
+
+    text-align: left;
+
+    width: 200px;
+
+}
+
+.contact .contact-01{
+
+    padding-top: 120px;
+
+    margin-left: -200px;
+
+
+
+}
+
+.contact .contact-01 h3{
+
+    font-size: 12px;
+
+    padding-bottom: 5px;
+
+}
+
+.contact .contact-01 form input{
+
+    padding: 8px 8px 8px 8px;
+
+    padding-left: 5px;
+
+    border-radius: 10px;
+
+    width: 210px;
+
+}
+
+.contact .contact-01 form textarea{
+
+    width: 210px;
+
+    padding: 8px 8px 8px 8px;
+
+}
+
+.contact .contact-01 form button{
+
+    border-radius: 10px;
+
+    width: 100px;
+
+    padding: 5px 5px 5px 0;
+
+    font-size: 12px;
+
+}
+
+
+
+.footer{
+
+    background-color: lightpink;
+
+    height: 9vh;
+
+    align-items: center;
+
+    text-align: center;
+
+    width: 100%;
+
+}
+
+.footer .class4{
+
+      padding: 0;
+
+      margin: 0;
+
+    height: 20px;
+
+    width: 200px;
+
+clip-path: polygon(30% 50%, 10% 0%, 60% 75%, 75% 45%, 75% 70%, 50% 75%, 0% 75%);
+
+   background: orange;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px){
+
+*{
+
+margin: 0;
+
+padding: 0;
+
+outline: none;
+
+border: none;
+
+text-decoration: none;
+
+text-transform: capitalize;
+
+transition: .2s linear;
+
+color: orange;
+
+}
+
+
+
+html{
+
+font-size: 62.5%;
+
+scroll-behavior: smooth;
+
+scroll-padding-top: 6rem;
+
+overflow-x: hidden;
+
+}
+
+
+
+section{
+
+padding: 2rem 9%;
+
+}
+
+
+
+
+
+.heading{
+
+text-align: center;
+
+align-items: center;
+
+font-size: 4rem;
+
+color: #333;
+
+padding: 1rem;
+
+margin: 2rem 0;
+
+background: #FFAEE3;
+
+}
+
+
+
+.heading span{
+
+color: #e84393;
+
+}
+
+
+
+header{
+
+position: fixed;
+
+top:0;
+
+left: 0;
+
+right: 0;
+
+background: pink;
+
+padding: 2rem 9%;
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+z-index: 1000;
+
+box-shadow: 0 .5rem 1rem orange;
+
+}
+
+header:hover{
+
+background:white;
+
+}
+
+
+
+header .logo{
+
+font-size: 3rem;
+
+color: orange;
+
+font-weight: bolder;
+
+}
+
+
+
+
+
+header .logo span{
+
+color: orange;
+
+}
+
+
+
+header .navbar a{
+
+font-size: 2rem;
+
+padding: 0 1.5rem;
+
+color: orange;
+
+}
+
+
+
+header .navbar a:hover{
+
+color: pink;
+
+}
+
+
+
+header .icons a{
+
+font-size: 2.5rem;
+
+color: #333;
+
+margin-left:1.5rem;
+
+}
+
+
+
+header .icons a:hover{
+
+color: pink;
+
+}
+
+
+
+header .icons a img{
+
+width: 2.5rem;
+
+height: 2.5rem;
+
+font-size: 2.5rem;
+
+background-color: orange;
+
+margin-left:1.5rem;
+
+}
+
+
+
+header .icons a img:hover{
+
+background-color: pink;
+
+}
+
+
+
+header #toggler{
+
+display: none;
+
+}
+
+header #toggler p {
+
+    color: #60F1FF;
+
+}
+
+
+
+header .fa-bars{
+
+font-size: 3rem;
+
+color: #333;
+
+text-align: center;
+
+padding: 7px 1.5rem;
+
+cursor: pointer;
+
+display: none;
+
+}
+
+
+
+
+
+.home{
+
+display: flex;
+
+align-items: center;
+
+min-height: 80vh;
+
+background: url(image/20190810_033506.jpg) no-repeat;
+
+background-size: cover;
+
+background-color: #FFDEF8;
+
+max-width:70rem; 
+
+padding-top: 60px;
+
+}
+
+
+
+
+
+.home h1{
+
+width: 40rem;
+
+text-align: center;
+
+vertical-align: middle;
+
+font-size: 40px ;
+
+font-weight: 600;
+
+border-radius: 3px;
+
+border:2px solid orange;
+
+box-shadow: .4rem 1rem 1rem 1rem #FFA6EA;
+
+}
+
+
+
+.about{
+
+display: flex;
+
+align-items: center;
+
+min-height: 80vh;
+
+max-width: 70rem;
+
+background-color: pink;
+
+}
+
+.about .class{
+
+padding-left: -30px;
+
+background-color: #FFDEF8;
+
+height: 80vh;
+
+width: 520px;
+
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
+
+   border-radius: 50px;
+
+   border-bottom: 34px solid #FFA6EA;
+
+}
+
+.about .class h1{
+
+    padding: top;
+
+    text-align: left;
+
+    font-size: 30px;
+
+    border-top: 34px solid #FFA6EA;
+
+}
+
+.about .class h3{
+
+    padding-top: 20px;
+
+    border-radius: 50px;
+
+    border-top: 5px solid #FFA6EA;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    width:80%;
+
+    font-weight: 100;
+
+}
+
+.about h4{
+
+    padding-left: 10px;
+
+    font-size: 15px;
+
+    font-weight: 230;
+
+    
+
+}  
+
+.us{
+
+display: flex;
+
+align-items: center;
+
+min-height: 80vh;
+
+max-width: 70rem;
+
+background-color: lightpink; 
+
+}
+
+.us .usstart{
+
+    height: 61vh;
+
+    width: 30px;
+
+clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 105% 50%, 0% 0%);
+
+background-color: orange;
+
+}
+
+.us h3{
+
+text-transform: uppercase;
+
+line-height: 24px;
+
+padding: 5px 4px;
+
+margin:0 0 10px 0;
+
+font-size: 17px;
+
+}
+
+.us ul li {
+
+    list-style-type: circle;
+
+    font-size: 13px;
+
+}
+
+
+
+.tips{
+
+ display: flex;   
+
+ align-items: center;
+
+ background-color: pink;
+
+ min-height: 80vh;
+
+ max-width: 70rem;
+
+}
+
+.tips:hover{
+
+    background-color: lightpink;
+
+}
+
+.tips ul li{
+
+    list-style: none;
+
+    padding:top;
+
+    font-size: 18px;
+
+    font-weight: 380;
+
+    padding-bottom: 6px;
+
+    padding-top: 10px;
+
+}
+
+.tips ul p{
+
+    padding-top: 6px;
+
+    font-size: 15px;
+
+    font-weight: 200;
+
+}
+
+.tips-01{
+
+    display:flex;
+
+    align-self: center;
+
+    background-color: lightpink;
+
+    min-height: 80vh;
+
+    max-width: 70rem;
+
+}
+
+.tips-01:hover{
+
+    background-color: pink;
+
+}
+
+.tips-01 ul li{
+
+    list-style: none;
+
+    padding:top;
+
+    font-size: 18px;
+
+    font-weight: 380;
+
+    padding-bottom: 6px;
+
+    padding-top: 10px;
+
+}
+
+.tips-01 ul p{
+
+    padding-top: 6px;
+
+    font-size: 15px;
+
+    font-weight: 200;
+
+}
+
+.tips-02{
+
+    display: flex;
+
+    align-self: center;
+
+    background-color: pink;
+
+    min-height: 80vh;
+
+    max-width: 70rem;
+
+}
+
+.tips-02:hover{
+
+    background-color: lightpink;
+
+}
+
+.tips-02 ul li{
+
+    list-style: none;
+
+    padding:top;
+
+    font-size: 18px;
+
+    font-weight: 380;
+
+    padding-bottom: 6px;
+
+    padding-top: 10px;
+
+}
+
+.tips-02 ul p{
+
+    padding-top: 6px;
+
+    font-size: 15px;
+
+    font-weight: 200;
+
+}
+
+.tips-03{
+
+    display: flex;
+
+    align-items: center;
+
+    background-color: lightpink;
+
+    min-height: 100vh;
+
+    max-width: 70rem;
+
+}
+
+.tips-03:hover{
+
+    background-color: pink;
+
+}
+
+.tips-03 ul li{
+
+    list-style: none;
+
+    padding:top;
+
+    font-size: 18px;
+
+    font-weight: 380;
+
+    padding-bottom: 6px;
+
+    padding-top: 10px;
+
+}
+
+.tips-03 ul p{
+
+    padding-top: 6px;
+
+    font-size: 15px;
+
+    font-weight: 200;
+
+}
+
+.iconco{
+
+    background-color: orange;
+
+    min-height: 45vh;
+
+    max-width: 70rem;
+
+}
+
+.iconco h1{
+
+    color: #FFAEE3;
+
+    padding: top;
+
+    font-weight: 600;
+
+    max-width: 50rem;
+
+    padding-bottom: 30px;
+
+}
+
+.iconco p{
+
+    padding-right: 80px;
+
+    color: #FFAEE3;
+
+    font-weight: 500;
+
+    padding-top: 20px;
+
+    padding-bottom: 10px;
+
+    font-size: 12px;
+
+}
+
+.iconco a{
+
+    align-content: center;
+
+    padding-right: 85px;
+
+    padding-bottom: 15px;
+
+    color: green;
+
+    font-weight: 500;
+
+    justify-content: space-between;
+
+    text-decoration: underline;
+
+}
+
+.contact{
+
+    display: flex;
+
+    min-height: 100vh;
+
+    max-width: 70rem;
+
+    background-color: pink;
+
+}
+
+.contact h1{
+
+    font-size: 20px;
+
+    padding: 10px 22px 15px 2px;
+
+    text-align: center;
+
+    font-weight: 100;
+
+}
+
+.contact p{
+
+    font-size: 12px;
+
+    font-weight: 180;
+
+    padding-right: 40px;
+
+    text-align: left;
+
+    width: 200px;
+
+}
+
+.contact .contact-01{
+
+    padding-top: 120px;
+
+    margin-left: -200px;
+
+
+
+}
+
+.contact .contact-01 h3{
+
+    font-size: 12px;
+
+    padding-bottom: 5px;
+
+}
+
+.contact .contact-01 form input{
+
+    padding: 8px 8px 8px 8px;
+
+    padding-left: 5px;
+
+    border-radius: 10px;
+
+    width: 210px;
+
+}
+
+.contact .contact-01 form textarea{
+
+    width: 210px;
+
+    padding: 8px 8px 8px 8px;
+
+}
+
+.contact .contact-01 form button{
+
+    border-radius: 10px;
+
+    width: 100px;
+
+    padding: 5px 5px 5px 0;
+
+    font-size: 12px;
+
+}
+
+
+
+.footer{
+
+    background-color: lightpink;
+
+    height: 13vh;
+
+    align-items: center;
+
+    text-align: center;
+
+}
+
+.footer .class4{
+
+    align-items: center;
+
+    text-align: center;
+
+      padding-left: 45%;
+
+      margin: 0;
+
+    height: 20px;
+
+    width: 200px;
+
+clip-path: polygon(30% 50%, 10% 0%, 60% 75%, 75% 45%, 75% 70%, 50% 75%, 0% 75%);
+
+   background: orange;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 991px){
+
+html{
+
+font-size: 55%;
+
+}
+
+
+
+header{
+
+padding: 2rem;
+
+}
+
+
+
+section{
+
+padding: 2rem;
+
+}
+
+
+
+.home{
+
+background-position: left;
+
+}
+
+.heading{
+
+font-size: 3rem;
+
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+@media (max-width: 768px){
+
+
+
+header .fa-bars{
+
+display: block;
+
+}
+
+header .fa-bars p{
+
+color: orange;
+
+font-size: 19px;
+
+}
+
+
+
+header .navbar{
+
+width:200px;
+
+position: absolute;
+
+margin-top:50px;
+
+top: 100%;  left: 10px;   right: 0;
+
+background: #fff;
+
+border-radius: 14px;
+
+border-top: 3px solid orange;
+
+clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+}
+
+
+
+
+
+header #toggler:checked ~ .navbar{
+
+clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+
+
+header .navbar a{
+
+margin: 1.5rem;
+
+padding: 1.5rem;
+
+background: transparent;
+
+border-radius: 18px;
+
+border: 1px solid orange;
+
+display: block;
+
+width: 150px;
+
+}
+
+.heading{
+
+font-size: 3rem;
+
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<header>
+
+
+
+<input type="checkbox" name="" id="toggler">
+
+<label for="toggler" class="fas fa-bars"><p>menu</p></label>
+
+
+
+<a href="#" class="logo">RDUni<span>.</span></a>
+
+<nav class="navbar">
+
+<input type="checkbox" name="" id="toggler">
+
+<label for="toggler" class="fas fa-bars"><p>exit</p></label>
+
+<a href="#home">home</a>
+
+<a href="#about">about</a>
+
+<a href="#us">us</a>
+
+<a href="#tips">tips</a>
+
+<a href="#contact">contact</a>
+
+</nav>
+
+
+
+<div class="icons">
+
+<a href="#" class"fas fa-heart"><img src="1077035.png"> </a>
+
+<a href="#" class"fas fa-shopping-cart"><img src="2838895.png"></a>
+
+</div>
+
+
+
+</header>
+
+
+
+<section class="home" id="home">
+
+
+
+<h1>how to love yourself</h1>
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="about" id="about">
+
+    <div class="class">
+
+    <h1>love your self</h1> 
+
+    <h3>learn to love yourself by accepting yourself</h3>
+
+    </div>
+
+<h4>The  key  to  the  enjoyment  <br>of life  is  to  love <br> yourself  inside  and  out. <br> Having   negative  feelings  about  yourself  comes  at  quite  a  price  and  usually  affects   most  important  areas  of  your  life,  (life  sex,  relationship  etc.)  causing   unnecessary  struggle  and  strife.</h4>
+
+</section>
+
+
+
+
+
+
+
+<section class="us" id="us">
+
+  <h3>giude to love your life</h3>  
+
+<div class="usstart">
+
+    
+
+</div> 
+
+
+
+<ul>
+
+    <li><a href="#tips">#count the morning</a></li>
+
+    <li><a href="#tips">#think of the positive offnely</a></li>
+
+    <li><a href="#tips">#remeber where you came from</a></li>
+
+    <li><a href="#tips-01">#never forget to smile</a></li>
+
+    <li><a href="#tips-01">#love your home</a></li>
+
+    <li><a href="#tips-01">#choose those how accept you</a></li>
+
+    <li><a href="#tips-02">#make the right choice</a></li>
+
+    <li><a href="#tips-02">#dont forget to smile</a></li>
+
+    <li><a href="#tips-02">#find confort in any place</a></li>
+
+    <li><a href="#tips-03">#remeber the reason for your excistance</a></li>
+
+</ul>
+
+</section>
+
+
+
+<section class="tips" id="tips">
+
+<ul>
+
+<li>
+
+    #count on the morning
+
+</li>
+
+    <p>when you wake up from you dream remebering to tank that you are awake is key to your happines.</p>
+
+    <li>#be more positive</li>
+
+    <p> the fact that so many people have not been apretioating is because the think in many negative thoughts and so by avoiding those people including tgose thoughts you may lead yourself to postive light whixh helps you to be greatful about your personality</p>
+
+    <li>#remeber where you came from </li>
+
+    <p>knowing how you are starts from realizing where you came from. knowing your culture well is also about respecting it and so this is the big deal.</p>
+
+</ul> 
+
+</section>
+
+
+
+
+
+<section class="tips-01" id="tips-01">
+
+ <ul>
+
+<li>
+
+    #never forget to smile
+
+</li>
+
+    <p>when you wake up from you dream remebering to tank that you are awake is key to your happines.</p>
+
+    <li>#love your home</li>
+
+    <p> the fact that so many people have not been apretioating is because the think in many negative thoughts and so by avoiding those people including tgose thoughts you may lead yourself to postive light whixh helps you to be greatful about your personality</p>
+
+    <li>#remeber where you came from </li>
+
+    <p>knowing how you are starts from realizing where you came from. knowing your culture well is also about respecting it and so this is the big deal.</p>
+
+</ul>    
+
+    
+
+</section>
+
+
+
+
+
+
+
+<section class="tips-02" id="tips-02">
+
+ <ul>
+
+<li>
+
+    #count on the morning
+
+</li>
+
+    <p>when you wake up from you dream remebering to tank that you are awake is key to your happines.</p>
+
+    <li>#be more positive</li>
+
+    <p> the fact that so many people have not been apretioating is because the think in many negative thoughts and so by avoiding those people including tgose thoughts you may lead yourself to postive light whixh helps you to be greatful about your personality</p>
+
+    <li>#remeber where you came from </li>
+
+    <p>knowing how you are starts from realizing where you came from. knowing your culture well is also about respecting it and so this is the big deal.</p>
+
+</ul>    
+
+    
+
+</section>
+
+
+
+
+
+<section class="tips-03" id="tips-03">
+
+  <ul>
+
+<li>
+
+    #count on the morning
+
+</li>
+
+    <p>when you wake up from you dream remebering to tank that you are awake is key to your happines.</p>
+
+    <li>#be more positive</li>
+
+    <p> the fact that so many people have not been apretioating is because the think in many negative thoughts and so by avoiding those people including tgose thoughts you may lead yourself to postive light whixh helps you to be greatful about your personality</p>
+
+    <li>#remeber where you came from </li>
+
+    <p>knowing how you are starts from realizing where you came from. knowing your culture well is also about respecting it and so this is the big deal.</p>
+
+</ul>   
+
+    
+
+</section>
+
+
+
+<section class="iconco" id="iconco">
+
+ <h1>hey everyone i wish you had learned something and if you want to see other topics likeyou can sign up in our website.</h1>
+
+ <br>
+
+  <a href="#">sign up</a>
+
+ <br>
+
+<p>already have account</p>
+
+<a href="#">sign in</a>
+
+
+
+</section>
+
+
+
+<section class="contact" id="contact">
+
+    <div>
+
+        
+
+    <h1>contact</h1>
+
+    <p>what do you think of our topic ? give us your feedback</p>
+
+    </div>
+
+
+
+<div class="contact-01">
+
+    
+
+<form action="mailto:kengdasaw@gmail.com"
+
+method="POST"
+
+enctype="multipart/form-data"
+
+name="EmailForm">
+
+    <h3>Full Name:</h3>
+
+    <input type="text" size="19" name="Contact-Name"><br><br>
+
+    <h3>Email:</h3>
+
+    <input type="email" name="Contact-Email"><br><br> 
+
+    <h3>Your Message:</h3> 
+
+    <textarea name="Contact-Message" rows="6″ cols="20″>
+
+    </textarea><br><br> 
+
+    <button type="submit" value="Submit">Send</button>
+
+</form>  
+
+</div>
+
+
+
+</section>
+
+
+
+<section class="footer">
+
+<div class="class4">
+
+    
+
+</div>
+
+    <h1>Edited and Designed by Kidest Engdasaw</h1>
+
+</section>
+
+
+
+</body>
+
+</html>
